@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@null"
+            android:gravity="left"
+            android:hint="请输入要记录的花项："
+            android:padding="20dp"
+            android:textColor="@color/color999"
+            android:textColorHint="@color/color999"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="请输入商品价格："
+                android:textColor="@color/color999"/>
+
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:digits="1234567890."
+                android:gravity="center|right"
+                android:hint="0.00"
+                android:paddingRight="20dp"
+                android:textColor="@color/color999"
+                android:textColorHint="@color/color999"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="请选择购买时间："
+                android:textColor="@color/color999"/>
+
+
+            <TextView
+                android:id="@+id/tvData"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center|right"
+                android:hint="00-00"
+                android:paddingRight="20dp"
+                android:textColor="@color/color999"
+                android:textColorHint="@color/color999"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="请选择数量"
+                android:textColor="@color/color999"/>
+
+            <TextView
+                android:id="@+id/tvDel"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorCCC"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="—"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+
+            <TextView
+                android:id="@+id/tvNum"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="0"
+                android:textColor="@color/color999"/>
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorCCC"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="30dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

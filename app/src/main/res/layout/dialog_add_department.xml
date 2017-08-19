@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_four_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvGone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="请输入部门名称"
+            android:textColor="#333"/>
+
+        <EditText
+            android:id="@+id/etPhotoName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_bg_dialog_border"
+            android:hint="最多可输入10个字符"
+            android:paddingLeft="5dp"
+            android:textColor="@color/color999"
+            android:textColorHint="@color/color999"
+            android:textSize="12sp"/>
+
+        <EditText
+            android:id="@+id/etPhotoNamePsw"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_bg_dialog_border"
+            android:paddingLeft="5dp"
+            android:textColor="@color/color999"
+            android:textSize="@dimen/sp_12"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorCCC"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:divider="@drawable/shape_divider"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+
+            <Button
+                android:id="@+id/btnCancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="取消"
+                android:textColor="#999"
+                android:textSize="15sp"/>
+
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="保存"
+                android:textColor="@color/color84add6"
+                android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

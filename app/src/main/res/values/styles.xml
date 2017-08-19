@@ -1,0 +1,134 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle</item>
+    </style>
+
+    <style name="AppTheme.DrawerArrowToggle" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="BurroTheme" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="dialog_custom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">false</item>       <!--是否有标题-->
+        <item name="android:windowIsTranslucent">true</item> <!--是否半透明-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口背景色透明-->
+        <item name="android:background">#00000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">false</item> <!--背景是否模糊显示-->
+    </style>
+
+    <style name="BurroTheme.ChartHelp" parent="BurroTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="actionBarSize">48dp</item>
+        <item name="actionMenuTextColor">@color/burro_text_color</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/burro_text_color</item>
+        <item name="android:textColorPrimaryInverse">@color/burro_text_color</item>
+        <item name="android:textColorTertiary">@color/burro_text_color</item>
+        <item name="android:textAppearance">@style/Inttus.TextAppearance</item>
+        <item name="android:textAppearanceSmall">@style/Inttus.TextAppearance</item>
+        <item name="editTextStyle">@style/Inttus.EditText</item>
+        <!--<item name="tabTextAppearance">@style/MyCustomTextAppearance</item>-->
+        <item name="android:buttonStyle">?android:attr/borderlessButtonStyle</item>
+    </style>
+
+    <style name="BurroTheme.XiaoYi.Toolbar" parent="Theme.AppCompat.Light">
+        <item name="toolbarStyle">@style/Inttus.Toolbar</item>
+    </style>
+
+    <style name="BurroTheme.ChartHelp.Main">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="BurroTheme.ChartHelp.Detail">
+    </style>
+
+    <style name="BurroTheme.ChartHelp.Launcher">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="BurroTheme.Primary" parent="BurroTheme">
+        <item name="colorAccent">@color/burro_primary</item>
+        <item name="android:textColorPrimaryInverse">@color/burro_text_light</item>
+    </style>
+
+    <style name="BurroTheme.Red" parent="BurroTheme">
+        <item name="colorAccent">@color/burro_red</item>
+    </style>
+
+    <style name="BurroTheme.Gray" parent="BurroTheme">
+        <item name="colorAccent">@color/burro_primary</item>
+    </style>
+
+    <style name="BurroTheme.Green" parent="BurroTheme">
+        <item name="colorAccent">@color/burro_green</item>
+    </style>
+
+    <style name="BurroTheme.Blue" parent="BurroTheme">
+        <item name="colorAccent">@color/burro_blue</item>
+    </style>
+
+    <style name="BurroTheme.Orange" parent="BurroTheme">
+        <item name="colorAccent">#f87e24</item>
+    </style>
+
+
+    <style name="Inttus">
+    </style>
+
+
+    <style name="Inttus.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="Inttus.TextAppearance" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/burro_text_default</item>
+    </style>
+
+    <style name="Inttus.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="Inttus.TextAppearance.None" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+    </style>
+
+    <style name="Inttus.Button" parent="Widget.AppCompat.Button.Colored">
+    </style>
+
+    <style name="Inttus.Button.Primary">
+        <item name="android:theme">@style/BurroTheme.Primary</item>
+    </style>
+
+    <style name="Inttus.Button.Orange">
+        <item name="android:theme">@style/BurroTheme.Orange</item>
+    </style>
+
+    <style name="Inttus.Button.Red">
+        <item name="android:theme">@style/BurroTheme.Red</item>
+    </style>
+
+    <style name="Inttus.Button.Green">
+        <item name="android:theme">@style/BurroTheme.Green</item>
+    </style>
+
+    <style name="Inttus.Button.Blue">
+        <item name="android:theme">@style/BurroTheme.Blue</item>
+    </style>
+
+
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+</resources>
